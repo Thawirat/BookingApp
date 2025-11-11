@@ -33,7 +33,7 @@ services:
         ports:
             - "8000:80"
         volumes:
-            - ./roombooking:/var/www/html
+            - ./:/var/www/html
             - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
             - ./storage_roombooking:/var/www/html/storage
         depends_on:
