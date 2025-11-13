@@ -275,30 +275,6 @@
         //     forceTLS: false,
         //     disableStats: true,
         // });
-
-        // ===== 📡 ฟัง event การจอง =====
-        window.Echo.channel('booking-channel')
-            .listen('.BookingUpdated', (data) => {
-                console.log('📢 มีการอัปเดตการจอง:', data);
-
-                // // ✅ อัปเดต badge แจ้งเตือนแบบ realtime
-                // const badge = document.getElementById('notif-badge');
-                // if (badge) {
-                //     badge.innerText = parseInt(badge.innerText || 0) + 1;
-                // } else if (notifBtn) {
-                //     const span = document.createElement('span');
-                //     span.id = 'notif-badge';
-                //     span.className = 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger';
-                //     span.style.fontSize = '0.65rem';
-                //     span.innerText = '1';
-                //     notifBtn.appendChild(span);
-                // }
-
-                // // ✅ ตัวอย่าง: ถ้ามี element นับจำนวนจอง
-                // if (document.getElementById('totalBookings')) {
-                //     document.getElementById('totalBookings').textContent = data.totalBookings;
-                // }
-            });
     </script>
     @stack('scripts')
     <!-- Toast -->

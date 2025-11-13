@@ -14,14 +14,37 @@ class ManageUsersController extends Controller
     {
         $query = User::query();
 
-        if ($request->has('search')) {
+        // 🔍 ค้นหาจากชื่อ อีเมล หรือหน่วยงาน
+        if ($request->filled('search')) {
             $search = $request->input('search');
-            $query->where('name', 'like', "%$search%")
-                ->orWhere('email', 'like', "%$search%");
+            $query->where(function ($q) use ($search) {
+                $q->where('name', 'like', "%{$search}%")
+                    ->orWhere('email', 'like', "%{$search}%")
+                    ->orWhere('department', 'like', "%{$search}%");
+            });
         }
 
-        $users = $query->paginate(50);
+        // 🧩 กรองตามบทบาท (role)
+        if ($request->filled('role')) {
+            $query->where('role', $request->role);
+        }
 
+        // 🧩 กรองตามสถานะ (status)
+        if ($request->filled('status')) {
+            $query->where('status', $request->status);
+        }
+
+        // 🧮 เรียงลำดับ: รออนุมัติ → ไม่ active → active
+        $query->orderByRaw("CASE
+        WHEN status = 'pending' THEN 1
+        WHEN status = 'inactive' THEN 2
+        ELSE 3 END")
+            ->orderBy('created_at', 'desc');
+
+        // 📄 แบ่งหน้า (15 ต่อหน้า) + คงค่าฟิลเตอร์
+        $users = $query->paginate(20)->withQueryString();
+
+        // 📊 สถิติผู้ใช้
         $totalUsers = User::count();
         $adminCount = User::where('role', 'admin')->where('status', 'active')->count();
         $subAdminCount = User::where('role', 'sub-admin')->where('status', 'active')->count();
@@ -29,9 +52,17 @@ class ManageUsersController extends Controller
         $statusPendingCount = User::where('status', 'pending')->count();
         $statusActiveCount = User::where('status', 'active')->count();
         $statusRejectedCount = User::where('status', 'rejected')->count();
-        // $regularUserCount = $totalUsers - $adminCount;
 
-        return view('dashboard.manage_users', compact('users', 'totalUsers', 'adminCount', 'regularUserCount', 'subAdminCount', 'statusPendingCount', 'statusActiveCount', 'statusRejectedCount'));
+        return view('dashboard.manage_users', compact(
+            'users',
+            'totalUsers',
+            'adminCount',
+            'regularUserCount',
+            'subAdminCount',
+            'statusPendingCount',
+            'statusActiveCount',
+            'statusRejectedCount'
+        ));
     }
 
     public function update(Request $request, $id)

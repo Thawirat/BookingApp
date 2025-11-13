@@ -1,37 +1,36 @@
-@extends('layouts.app')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div>
         <div class="col-md-10 content">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2>จัดการผู้ใช้</h2>
                 <div class="d-flex align-items-center">
-                    <form action="{{ route('manage_users.index') }}" method="GET" id="filterForm"
+                    <form action="<?php echo e(route('manage_users.index')); ?>" method="GET" id="filterForm"
                         class="d-flex flex-wrap align-items-center gap-2">
 
                         <div class="d-flex align-items-center gap-2 flex-wrap">
-                            <input type="text" name="search" value="{{ request('search') }}" placeholder="ค้นหาผู้ใช้"
+                            <input type="text" name="search" value="<?php echo e(request('search')); ?>" placeholder="ค้นหาผู้ใช้"
                                 class="form-control" style="width: 200px;">
 
                             <select name="role" id="roleSelect" class="form-select" style="width: 160px;">
                                 <option value="">ทุกบทบาท</option>
-                                <option value="admin" {{ request('role') == 'admin' ? 'selected' : '' }}>ผู้ดูแลระบบหลัก
+                                <option value="admin" <?php echo e(request('role') == 'admin' ? 'selected' : ''); ?>>ผู้ดูแลระบบหลัก
                                 </option>
-                                <option value="sub-admin" {{ request('role') == 'sub-admin' ? 'selected' : '' }}>
+                                <option value="sub-admin" <?php echo e(request('role') == 'sub-admin' ? 'selected' : ''); ?>>
                                     ผู้ดูแลอาคาร</option>
-                                <option value="user" {{ request('role') == 'user' ? 'selected' : '' }}>ผู้ใช้ทั่วไป
+                                <option value="user" <?php echo e(request('role') == 'user' ? 'selected' : ''); ?>>ผู้ใช้ทั่วไป
                                 </option>
                             </select>
 
                             <select name="status" id="statusSelect" class="form-select" style="width: 160px;">
                                 <option value="">ทุกสถานะ</option>
-                                <option value="pending" {{ request('status') == 'pending' ? 'selected' : '' }}>รออนุมัติ
+                                <option value="pending" <?php echo e(request('status') == 'pending' ? 'selected' : ''); ?>>รออนุมัติ
                                 </option>
-                                <option value="active" {{ request('status') == 'active' ? 'selected' : '' }}>อนุมัติแล้ว
+                                <option value="active" <?php echo e(request('status') == 'active' ? 'selected' : ''); ?>>อนุมัติแล้ว
                                 </option>
-                                <option value="rejected" {{ request('status') == 'rejected' ? 'selected' : '' }}>ไม่อนุมัติ
+                                <option value="rejected" <?php echo e(request('status') == 'rejected' ? 'selected' : ''); ?>>ไม่อนุมัติ
                                 </option>
                             </select>
+
                             <button type="submit"
                                 class="btn btn-primary px-4 d-flex align-items-center justify-content-center"
                                 style="height: 38px;">
@@ -45,9 +44,10 @@
                             </button>
                         </div>
                     </form>
+
                 </div>
             </div>
-            @include('components.manage-user-card')
+            <?php echo $__env->make('components.manage-user-card', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
             <div class="card shadow-sm">
                 <div class="card-body p-0">
                     <div class="table-responsive">
@@ -58,11 +58,12 @@
                                 </div>
 
                                 <div class="card-body">
-                                    @if (session('success'))
+                                    <?php if(session('success')): ?>
                                         <div class="alert alert-success">
-                                            {{ session('success') }}
+                                            <?php echo e(session('success')); ?>
+
                                         </div>
-                                    @endif
+                                    <?php endif; ?>
                                     <table class="table table-hover">
                                         <thead>
                                             <tr>
@@ -77,54 +78,56 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($users as $user)
+                                            <?php $__currentLoopData = $users; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $user): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                                 <tr>
                                                     <td class="text-center">
-                                                        {{ ($users->currentPage() - 1) * $users->perPage() + $loop->iteration }}
+                                                        <?php echo e(($users->currentPage() - 1) * $users->perPage() + $loop->iteration); ?>
+
                                                     </td>
-                                                    <td class="text-center">{{ $user->name }}</td>
-                                                    <td class="text-center">{{ $user->department }}</td>
-                                                    <td class="text-center">{{ $user->email }}</td>
-                                                    <td class="text-center">{{ $user->phone_number }}</td>
+                                                    <td class="text-center"><?php echo e($user->name); ?></td>
+                                                    <td class="text-center"><?php echo e($user->department); ?></td>
+                                                    <td class="text-center"><?php echo e($user->email); ?></td>
+                                                    <td class="text-center"><?php echo e($user->phone_number); ?></td>
                                                     <td class="text-center">
-                                                        @if ($user->role === 'admin')
+                                                        <?php if($user->role === 'admin'): ?>
                                                             <span class="badge bg-primary">ผู้ดูแลระบบหลัก</span>
-                                                        @elseif($user->role === 'sub-admin')
+                                                        <?php elseif($user->role === 'sub-admin'): ?>
                                                             <span class="badge bg-info text-white">ผู้ดูแลอาคาร</span>
-                                                        @else
+                                                        <?php else: ?>
                                                             <span class="badge bg-secondary">ผู้ใช้ทั่วไป</span>
-                                                        @endif
+                                                        <?php endif; ?>
                                                     </td>
                                                     <td class="text-center align-middle">
-                                                        @include('components.dropdown.user-dropdown')
+                                                        <?php echo $__env->make('components.dropdown.user-dropdown', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
                                                     </td>
                                                     <td>
                                                         <div class="btn-group" role="group">
                                                             <button type="button" class="btn btn-sm btn-warning"
-                                                                onclick="openEditUserModal({{ $user->id }})">
+                                                                onclick="openEditUserModal(<?php echo e($user->id); ?>)">
                                                                 <i class="fas fa-edit"></i>
                                                             </button>
-                                                            @include('components.user-edit')
+                                                            <?php echo $__env->make('components.user-edit', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
                                                             <button type="button"
                                                                 class="btn btn-sm btn-danger delete-user-btn"
-                                                                data-id="{{ $user->id }}"
-                                                                data-name="{{ $user->name }}">
+                                                                data-id="<?php echo e($user->id); ?>"
+                                                                data-name="<?php echo e($user->name); ?>">
                                                                 <i class="fas fa-trash"></i>
                                                             </button>
                                                         </div>
-                                                        <form id="deleteUserForm{{ $user->id }}"
-                                                            action="{{ route('manage_users.destroy', $user->id) }}"
+                                                        <form id="deleteUserForm<?php echo e($user->id); ?>"
+                                                            action="<?php echo e(route('manage_users.destroy', $user->id)); ?>"
                                                             method="POST" class="d-inline">
-                                                            @csrf
-                                                            @method('DELETE')
+                                                            <?php echo csrf_field(); ?>
+                                                            <?php echo method_field('DELETE'); ?>
                                                         </form>
                                                     </td>
                                                 </tr>
-                                            @endforeach
+                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                         </tbody>
                                     </table>
                                     <div class="d-flex justify-content-center mt-4">
-                                        {{ $users->appends(['search' => request('search')])->links('pagination::bootstrap-5') }}
+                                        <?php echo e($users->appends(['search' => request('search')])->links('pagination::bootstrap-5')); ?>
+
                                     </div>
                                 </div>
                             </thead>
@@ -134,7 +137,7 @@
             </div>
         </div>
     </div>
-@endsection
+<?php $__env->stopSection(); ?>
 <style>
     .container {
         max-width: 1200px;
@@ -188,7 +191,7 @@
         }
     }
 </style>
-@push('scripts')
+<?php $__env->startPush('scripts'); ?>
     <script type="text/javascript">
         window.openEditUserModal = function(userId) {
             fetch(`/api/users/${userId}`, {
@@ -304,7 +307,9 @@
             });
         });
         document.getElementById('resetButton').addEventListener('click', () => {
-            window.location.href = "{{ route('manage_users.index') }}";
+            window.location.href = "<?php echo e(route('manage_users.index')); ?>";
         });
     </script>
-@endpush
+<?php $__env->stopPush(); ?>
+
+<?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH /var/www/html/resources/views/dashboard/manage_users.blade.php ENDPATH**/ ?>

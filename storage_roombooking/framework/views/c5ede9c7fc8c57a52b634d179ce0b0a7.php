@@ -32,7 +32,9 @@
                         <div class="text-yellow-500 text-5xl mb-4">
                             <i class="fas fa-calendar-check"></i>
                         </div>
-                        <h3 class="fw-bold"><?php echo e($totalBookings); ?> การจองทั้งหมด</h3>
+                        <h3 class="fw-bold">
+                            <span id="totalBookingsCount"><?php echo e($totalBookings); ?></span> การจองทั้งหมด
+                        </h3>
                         <p class="mt-2">การจองทั้งหมดที่มีในระบบ</p>
                     </div>
                 <?php elseif($role === 'sub-admin'): ?>
@@ -40,10 +42,13 @@
                         <div class="text-sky-500 text-5xl mb-4">
                             <i class="fas fa-calendar-check"></i>
                         </div>
-                        <h3 class="fw-bold"><?php echo e($totalbuildingBookings); ?> การจองในห้องทั้งหมด</h3>
+                        <h3 class="fw-bold">
+                            <span id="totalbuildingBookingsCount"><?php echo e($totalbuildingBookings); ?></span> การจองในห้องทั้งหมด
+                        </h3>
                         <p class="mt-2">การจองทั้งหมดในห้องที่อยู่ในการดูแล</p>
                     </div>
                 <?php endif; ?>
+
 
                 <!-- Card: Dashboard ผู้ดูแล -->
                 <?php if(Auth::check() && Auth::user()->isAdminOrSubAdmin()): ?>
@@ -199,7 +204,8 @@
                         </div>
                         <div class="card-body ps-3">
                             <p><i class="fas fa-university me-2 ms-1 text-primary"></i>มหาวิทยาลัยราชภัฏสกลนคร</p>
-                            <p><i class="fas fa-map-marker-alt me-2 ms-1 text-danger"></i>เลขที่ 680 ถนนนิตโย ตำบลธาตุเชิงชุม อำเภอเมือง จังหวัดสกลนคร 47000</p>
+                            <p><i class="fas fa-map-marker-alt me-2 ms-1 text-danger"></i>เลขที่ 680 ถนนนิตโย
+                                ตำบลธาตุเชิงชุม อำเภอเมือง จังหวัดสกลนคร 47000</p>
                             <p><i class="fas fa-phone-alt me-2 ms-1 text-success"></i>โทรศัพท์ 042-970021 , 042-970094</p>
                             <p><i class="fas fa-fax me-2 ms-1 text-success"></i>โทรสาร 042-970022</p>
                             
@@ -219,6 +225,33 @@
             </div>
         </div>
     </div>
+    <h3 id="bookingCount" class="fw-bold"><?php echo e($totalBookings); ?> การจองทั้งหมด</h3>
+    <?php $__env->startPush('scripts'); ?>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                let channelName =
+                    "<?php echo e($role === 'admin' ? 'bookings' : 'building-bookings.' . auth()->user()->building_id); ?>";
+
+                console.log('Connecting to channel:', channelName);
+
+                window.Echo.channel(channelName)
+                    .listen('.new-booking', (event) => {
+                        console.log('📢 New booking:', event.booking);
+
+                        if ("<?php echo e($role); ?>" === 'admin') {
+                            let el = document.getElementById('totalBookingsCount');
+                            if (el) el.textContent = parseInt(el.textContent) + 1;
+                        }
+
+                        if ("<?php echo e($role); ?>" === 'sub-admin') {
+                            let el = document.getElementById('totalbuildingBookingsCount');
+                            if (el) el.textContent = parseInt(el.textContent) + 1;
+                        }
+                    });
+            });
+        </script>
+    <?php $__env->stopPush(); ?>
+
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH /var/www/html/resources/views/index.blade.php ENDPATH**/ ?>

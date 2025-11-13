@@ -14,6 +14,7 @@ use App\Models\BookingHistory;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\BookingCreatedMail;
+use App\Events\BookingCreated;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\NewBookingNotification;
 
@@ -230,7 +231,8 @@ class BookingController extends Controller
 
             $booking->booking_id = $this->generateBookingId();
             $booking->save();
-
+            
+            broadcast(new BookingCreated($booking))->toOthers();
             // Log successful booking
             Log::info('Booking created successfully', ['booking_id' => $booking->id]);
             // $admins = User::where('role', 'admin')->get();

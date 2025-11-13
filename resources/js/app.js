@@ -1,24 +1,16 @@
-import './bootstrap';
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/app.css';
-import Alpine from 'alpinejs'
-import collapse from '@alpinejs/collapse'
+import "./bootstrap";
+import "bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../css/app.css";
 
-Alpine.plugin(collapse)
+import Alpine from "alpinejs";
+import collapse from "@alpinejs/collapse";
 
-Alpine.start()
+Alpine.plugin(collapse);
+Alpine.start();
 
-import Echo from 'laravel-echo';
+window.Echo.channel('bookings')
+    .listen('.new-booking', (event) => {
+        console.log('📢 มีการจองใหม่:', event.booking);
+    });
 
-window.Echo = new Echo({
-    broadcaster: 'reverb',
-    key: import.meta.env.VITE_REVERB_APP_KEY,
-    wsHost: window.location.hostname,
-    wsPort: 8080,
-    wssPort: 8080,
-    forceTLS: false,
-    enabledTransports: ['ws', 'wss'],
-});
-
-console.log("📡 Reverb connected", window.Echo);

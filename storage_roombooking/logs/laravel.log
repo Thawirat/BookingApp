@@ -442,3 +442,226 @@
 [2025-10-27 14:10:55] local.INFO: Bookings + History: {"count":19} 
 [2025-10-27 14:30:23] local.INFO: Bookings + History: {"count":19} 
 [2025-10-27 14:30:57] local.INFO: Bookings + History: {"count":19} 
+[2025-11-11 11:37:02] local.DEBUG: Incoming booking request: {"_token":"CCp12kHwPNT3CFp2aUIpflsSrO5DxN1xT5YgHess","room_id":"1","building_id":"10","room_name":"ห้องประชุมกองนโยบายและแผน","building_name":"อาคาร 10 สำนักงานอธิการบดี","user_id":"2","title":"k,kj","external_name":"Thawirat Laolotwan","external_position":"kyuk","external_email":"thawirat.la63@snru.ac.th","external_phone":"0807721335","coordinator_name":"Thawirat Laolotwan","coordinator_phone":"0807721335","coordinator_department":"MIS","participant_count":"1","reason":"kuyk","booker_info":"uykuyk","booking_start":"2025-11-18T08:00:00","booking_end":"2025-11-19T09:00:00","check_in_time":"08:00","check_out_time":"09:00"} 
+[2025-11-11 11:37:02] local.INFO: No payment slip provided in the request.  
+[2025-11-11 11:37:02] local.INFO: Booking created successfully {"booking_id":30} 
+[2025-11-11 11:37:03] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 11:55:16] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 11:55:18] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 11:55:36] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 11:56:19] local.DEBUG: Incoming booking request: {"_token":"CCp12kHwPNT3CFp2aUIpflsSrO5DxN1xT5YgHess","room_id":"1","building_id":"10","room_name":"ห้องประชุมกองนโยบายและแผน","building_name":"อาคาร 10 สำนักงานอธิการบดี","user_id":"2","title":"เิดเื","external_name":"Thawirat Laolotwan","external_position":"เดืดเ","external_email":"thawirat.la63@snru.ac.th","external_phone":"0807721335","coordinator_name":"Thawirat Laolotwan","coordinator_phone":"0807721335","coordinator_department":"MIS","participant_count":"242","reason":"4242","booker_info":"424","booking_start":"2025-11-20T08:00:00","booking_end":"2025-11-21T09:00:00","check_in_time":"08:00","check_out_time":"09:00"} 
+[2025-11-11 11:56:19] local.INFO: No payment slip provided in the request.  
+[2025-11-11 11:56:19] local.INFO: Booking created successfully {"booking_id":31} 
+[2025-11-11 11:56:21] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 11:56:21] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 13:27:57] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 13:27:57] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 13:48:11] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 13:48:11] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 13:48:15] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 13:48:15] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 13:49:54] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 13:49:54] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 14:03:01] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 14:03:01] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 14:39:17] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 14:39:17] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 14:44:38] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 14:44:38] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 15:30:25] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 15:30:25] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 15:30:51] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 15:30:51] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 15:58:38] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-11 15:58:38] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:13:30] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:13:30] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:44:04] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:44:04] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:44:07] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:44:07] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:52:42] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:52:42] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:54:01] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:54:01] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:54:14] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:54:14] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:54:39] local.DEBUG: Booking ID 31 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:54:39] local.DEBUG: Booking ID 30 has room with image: room_images/1758527706_68d100da4d8b6.jpg  
+[2025-11-12 09:55:30] local.INFO: Update request received {"room_id":"1","data":{"_token":"VWO3gQxXE5ayxYtB6wMpQzcOxgUhE9Q7uwp8d2sD","_method":"PUT","building_id":"10","room_name":"ห้องประชุมกองนโยบายและแผน","capacity":"27","room_type":"2","room_type_other":null,"class":"4","room_details":"ห้องประชุมขนาดเล็กความจุเต็มที่ จุได้ 30 คน แต่ต้องเสริมเก้าอี้","equipments":[{"name":"คอมพิวเตอร์ตั้งโต๊ะ","note":"คอมพิวเตอร์ตั้งโต๊ะ","quantity":"1"},{"name":"โปรเจ็คเตอร์","note":"โปรเจ็คเตอร์","quantity":"1"}],"status_id":"2","image":{"Illuminate\\Http\\UploadedFile":"/tmp/phpAWwFwP"}}} 
+[2025-11-12 09:55:31] local.INFO: Room image updated successfully {"path":"room_images/1762916131_6913f7230aff6.jpg","size":47895,"mime":"image/jpeg"} 
+[2025-11-12 09:55:31] local.INFO: Room updated successfully {"building_id":"10","room_id":1,"room_name":"ห้องประชุมกองนโยบายและแผน","room_type":"2","room_type_other":null,"class":"4","room_details":"ห้องประชุมขนาดเล็กความจุเต็มที่ จุได้ 30 คน แต่ต้องเสริมเก้าอี้","image":"room_images/1762916131_6913f7230aff6.jpg","capacity":"27","service_rates":null,"status_id":"2","created_at":"2025-07-24T07:24:47.000000Z","updated_at":"2025-11-12T02:55:31.000000Z","equipments":[{"id":38,"building_id":10,"room_id":1,"name":"คอมพิวเตอร์ตั้งโต๊ะ","quantity":1,"note":"คอมพิวเตอร์ตั้งโต๊ะ","created_at":"2025-11-12T02:55:31.000000Z","updated_at":"2025-11-12T02:55:31.000000Z"},{"id":39,"building_id":10,"room_id":1,"name":"โปรเจ็คเตอร์","quantity":1,"note":"โปรเจ็คเตอร์","created_at":"2025-11-12T02:55:31.000000Z","updated_at":"2025-11-12T02:55:31.000000Z"}]} 
+[2025-11-12 09:55:34] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:55:34] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:55:41] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:55:41] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:57:27] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:57:27] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:57:38] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:57:38] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:58:52] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:58:52] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:59:06] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:59:06] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:59:13] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 09:59:13] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 10:00:22] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 10:00:22] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 10:00:42] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 10:00:42] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 10:01:00] local.DEBUG: Incoming booking request: {"_token":"c04GYvcoz2whcH3v4IQA7n0uXyHj9x2Bd07FHmI0","room_id":"1","building_id":"10","room_name":"ห้องประชุมกองนโยบายและแผน","building_name":"อาคาร 10 สำนักงานอธิการบดี","user_id":"2","title":"axa","external_name":"Thawirat Laolotwan","external_position":"axaa","external_email":"thawirat.la63@snru.ac.th","external_phone":"0807721335","coordinator_name":"Thawirat Laolotwan","coordinator_phone":"0807721335","coordinator_department":"MIS","participant_count":"121","reason":"xax","booker_info":"sasa","booking_start":"2025-11-22T08:00:00","booking_end":"2025-11-22T09:00:00","check_in_time":"08:00","check_out_time":"09:00"} 
+[2025-11-12 10:01:00] local.INFO: No payment slip provided in the request.  
+[2025-11-12 10:01:00] local.INFO: Booking created successfully {"booking_id":32} 
+[2025-11-12 10:01:01] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 10:01:01] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 10:01:01] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 10:16:32] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 10:16:32] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 10:16:32] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:17:37] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:17:37] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:17:37] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:40:16] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:40:16] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:40:16] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:40:31] local.INFO: Preparing to copy booking 29 to history  
+[2025-11-12 11:40:31] local.INFO: Booking 29 copied to history successfully.  
+[2025-11-12 11:40:31] local.INFO: Preparing to copy booking 23 to history  
+[2025-11-12 11:40:31] local.INFO: Booking 23 copied to history successfully.  
+[2025-11-12 11:40:31] local.INFO: Preparing to copy booking 25 to history  
+[2025-11-12 11:40:31] local.INFO: Booking 25 copied to history successfully.  
+[2025-11-12 11:40:31] local.INFO: Preparing to copy booking 27 to history  
+[2025-11-12 11:40:31] local.INFO: Booking 27 copied to history successfully.  
+[2025-11-12 11:40:38] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:40:38] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:40:38] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:04] local.DEBUG: Incoming booking request: {"_token":"VWO3gQxXE5ayxYtB6wMpQzcOxgUhE9Q7uwp8d2sD","room_id":"1","building_id":"10","room_name":"ห้องประชุมกองนโยบายและแผน","building_name":"อาคาร 10 สำนักงานอธิการบดี","user_id":"2","title":"กหอกหอ","external_name":"Thawirat Laolotwan","external_position":"กหอหก","external_email":"thawirat.la63@snru.ac.th","external_phone":"0807721335","coordinator_name":"Thawirat Laolotwan","coordinator_phone":"0807721335","coordinator_department":"MIS","participant_count":"242","reason":"242","booker_info":"7474","booking_start":"2025-11-24T08:00:00","booking_end":"2025-11-24T09:00:00","check_in_time":"08:00","check_out_time":"09:00"} 
+[2025-11-12 11:41:04] local.INFO: No payment slip provided in the request.  
+[2025-11-12 11:41:04] local.INFO: Booking created successfully {"booking_id":33} 
+[2025-11-12 11:41:05] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:05] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:05] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:05] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:09] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:09] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:09] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:09] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:11] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:11] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:11] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:11] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:29] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:29] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:29] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:29] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:48] local.DEBUG: Incoming booking request: {"_token":"KraLMF0ghE9DOBxm4BQXzoVr1QZJcf3NxkZ2U6bH","room_id":"1","building_id":"10","room_name":"ห้องประชุมกองนโยบายและแผน","building_name":"อาคาร 10 สำนักงานอธิการบดี","user_id":"2","title":"532453","external_name":"Thawirat Laolotwan","external_position":"45345","external_email":"thawirat.la63@snru.ac.th","external_phone":"0807721335","coordinator_name":"Thawirat Laolotwan","coordinator_phone":"0807721335","coordinator_department":"MIS","participant_count":"453","reason":"453","booker_info":"3453","booking_start":"2025-11-25T08:00:00","booking_end":"2025-11-25T09:00:00","check_in_time":"08:00","check_out_time":"09:00"} 
+[2025-11-12 11:41:48] local.INFO: No payment slip provided in the request.  
+[2025-11-12 11:41:48] local.INFO: Booking created successfully {"booking_id":34} 
+[2025-11-12 11:41:49] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:49] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:49] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:49] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:41:49] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:55:57] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:55:57] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:55:57] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:55:57] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:55:57] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:56:18] local.DEBUG: Incoming booking request: {"_token":"KraLMF0ghE9DOBxm4BQXzoVr1QZJcf3NxkZ2U6bH","room_id":"1","building_id":"10","room_name":"ห้องประชุมกองนโยบายและแผน","building_name":"อาคาร 10 สำนักงานอธิการบดี","user_id":"2","title":"12","external_name":"Thawirat Laolotwan","external_position":"21","external_email":"thawirat.la63@snru.ac.th","external_phone":"0807721335","coordinator_name":"Thawirat Laolotwan","coordinator_phone":"0807721335","coordinator_department":"MIS","participant_count":"12","reason":"12","booker_info":"2","booking_start":"2025-11-26T08:00:00","booking_end":"2025-11-26T09:00:00","check_in_time":"08:00","check_out_time":"09:00"} 
+[2025-11-12 11:56:18] local.INFO: No payment slip provided in the request.  
+[2025-11-12 11:56:18] local.INFO: Booking created successfully {"booking_id":35} 
+[2025-11-12 11:56:20] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:56:20] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:56:20] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:56:20] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:56:20] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 11:56:20] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:53] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:53] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:53] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:53] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:53] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:53] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:59] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:59] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:59] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:59] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:59] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:21:59] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:22:15] local.DEBUG: Incoming booking request: {"_token":"KraLMF0ghE9DOBxm4BQXzoVr1QZJcf3NxkZ2U6bH","room_id":"1","building_id":"10","room_name":"ห้องประชุมกองนโยบายและแผน","building_name":"อาคาร 10 สำนักงานอธิการบดี","user_id":"2","title":"กฟกไก","external_name":"Thawirat Laolotwan","external_position":"ไกไกไ","external_email":"thawirat.la63@snru.ac.th","external_phone":"0807721335","coordinator_name":"Thawirat Laolotwan","coordinator_phone":"0807721335","coordinator_department":"MIS","participant_count":"12","reason":"we","booker_info":"12","booking_start":"2025-11-27T08:00:00","booking_end":"2025-11-27T09:00:00","check_in_time":"08:00","check_out_time":"09:00"} 
+[2025-11-12 13:22:15] local.INFO: No payment slip provided in the request.  
+[2025-11-12 13:22:15] local.INFO: Booking created successfully {"booking_id":36} 
+[2025-11-12 13:22:16] local.DEBUG: Booking ID 36 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:22:16] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:22:16] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:22:16] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:22:16] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:22:16] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:22:16] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:32] local.DEBUG: Incoming booking request: {"_token":"KraLMF0ghE9DOBxm4BQXzoVr1QZJcf3NxkZ2U6bH","room_id":"1","building_id":"10","room_name":"ห้องประชุมกองนโยบายและแผน","building_name":"อาคาร 10 สำนักงานอธิการบดี","user_id":"2","title":"26+","external_name":"Thawirat Laolotwan","external_position":"95","external_email":"thawirat.la63@snru.ac.th","external_phone":"0807721335","coordinator_name":"Thawirat Laolotwan","coordinator_phone":"0807721335","coordinator_department":"MIS","participant_count":"59","reason":"84","booker_info":"9+","booking_start":"2025-11-28T08:00:00","booking_end":"2025-11-28T09:00:00","check_in_time":"08:00","check_out_time":"09:00"} 
+[2025-11-12 13:45:32] local.INFO: No payment slip provided in the request.  
+[2025-11-12 13:45:32] local.INFO: Booking created successfully {"booking_id":37} 
+[2025-11-12 13:45:34] local.DEBUG: Booking ID 37 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:34] local.DEBUG: Booking ID 36 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:34] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:34] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:34] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:34] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:34] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:34] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:50] local.DEBUG: Booking ID 37 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:50] local.DEBUG: Booking ID 36 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:50] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:50] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:50] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:50] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:50] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:50] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:54] local.DEBUG: Booking ID 37 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:54] local.DEBUG: Booking ID 36 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:54] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:54] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:54] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:54] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:54] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 13:45:54] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:03:18] local.DEBUG: Booking ID 37 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:03:18] local.DEBUG: Booking ID 36 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:03:18] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:03:18] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:03:18] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:03:18] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:03:18] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:03:18] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:54:04] local.DEBUG: Booking ID 37 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:54:04] local.DEBUG: Booking ID 36 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:54:04] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:54:04] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:54:04] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:54:04] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:54:04] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 14:54:04] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 15:15:11] local.DEBUG: Booking ID 37 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 15:15:11] local.DEBUG: Booking ID 36 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 15:15:11] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 15:15:11] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 15:15:11] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 15:15:11] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 15:15:11] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-12 15:15:11] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:06:45] local.DEBUG: Booking ID 37 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:06:45] local.DEBUG: Booking ID 36 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:06:45] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:06:45] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:06:45] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:06:45] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:06:45] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:06:45] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:50:58] local.DEBUG: Booking ID 37 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:50:59] local.DEBUG: Booking ID 36 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:50:59] local.DEBUG: Booking ID 35 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:50:59] local.DEBUG: Booking ID 34 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:50:59] local.DEBUG: Booking ID 33 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:50:59] local.DEBUG: Booking ID 32 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:50:59] local.DEBUG: Booking ID 31 has room with image: room_images/1762916131_6913f7230aff6.jpg  
+[2025-11-13 09:50:59] local.DEBUG: Booking ID 30 has room with image: room_images/1762916131_6913f7230aff6.jpg  

@@ -34,7 +34,9 @@
                         <div class="text-yellow-500 text-5xl mb-4">
                             <i class="fas fa-calendar-check"></i>
                         </div>
-                        <h3 class="fw-bold">{{ $totalBookings }} การจองทั้งหมด</h3>
+                        <h3 class="fw-bold">
+                            <span id="totalBookingsCount">{{ $totalBookings }}</span> การจองทั้งหมด
+                        </h3>
                         <p class="mt-2">การจองทั้งหมดที่มีในระบบ</p>
                     </div>
                 @elseif ($role === 'sub-admin')
@@ -42,10 +44,13 @@
                         <div class="text-sky-500 text-5xl mb-4">
                             <i class="fas fa-calendar-check"></i>
                         </div>
-                        <h3 class="fw-bold">{{ $totalbuildingBookings }} การจองในห้องทั้งหมด</h3>
+                        <h3 class="fw-bold">
+                            <span id="totalbuildingBookingsCount">{{ $totalbuildingBookings }}</span> การจองในห้องทั้งหมด
+                        </h3>
                         <p class="mt-2">การจองทั้งหมดในห้องที่อยู่ในการดูแล</p>
                     </div>
                 @endif
+
 
                 <!-- Card: Dashboard ผู้ดูแล -->
                 @if (Auth::check() && Auth::user()->isAdminOrSubAdmin())
@@ -197,7 +202,8 @@
                         </div>
                         <div class="card-body ps-3">
                             <p><i class="fas fa-university me-2 ms-1 text-primary"></i>มหาวิทยาลัยราชภัฏสกลนคร</p>
-                            <p><i class="fas fa-map-marker-alt me-2 ms-1 text-danger"></i>เลขที่ 680 ถนนนิตโย ตำบลธาตุเชิงชุม อำเภอเมือง จังหวัดสกลนคร 47000</p>
+                            <p><i class="fas fa-map-marker-alt me-2 ms-1 text-danger"></i>เลขที่ 680 ถนนนิตโย
+                                ตำบลธาตุเชิงชุม อำเภอเมือง จังหวัดสกลนคร 47000</p>
                             <p><i class="fas fa-phone-alt me-2 ms-1 text-success"></i>โทรศัพท์ 042-970021 , 042-970094</p>
                             <p><i class="fas fa-fax me-2 ms-1 text-success"></i>โทรสาร 042-970022</p>
                             {{-- <p><i class="fas fa-envelope me-2 ms-1 text-warning"></i>booking@snru.ac.th</p> --}}
@@ -217,4 +223,31 @@
             </div>
         </div>
     </div>
+    <h3 id="bookingCount" class="fw-bold">{{ $totalBookings }} การจองทั้งหมด</h3>
+    @push('scripts')
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                let channelName =
+                    "{{ $role === 'admin' ? 'bookings' : 'building-bookings.' . auth()->user()->building_id }}";
+
+                console.log('Connecting to channel:', channelName);
+
+                window.Echo.channel(channelName)
+                    .listen('.new-booking', (event) => {
+                        console.log('📢 New booking:', event.booking);
+
+                        if ("{{ $role }}" === 'admin') {
+                            let el = document.getElementById('totalBookingsCount');
+                            if (el) el.textContent = parseInt(el.textContent) + 1;
+                        }
+
+                        if ("{{ $role }}" === 'sub-admin') {
+                            let el = document.getElementById('totalbuildingBookingsCount');
+                            if (el) el.textContent = parseInt(el.textContent) + 1;
+                        }
+                    });
+            });
+        </script>
+    @endpush
+
 @endsection
